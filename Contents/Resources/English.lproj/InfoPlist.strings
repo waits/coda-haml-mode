@@ -1,0 +1,6 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Haml";
+CFBundleShortVersionString = "1.0";
+CFBundleGetInfoString = "Haml Mode 1.0, Copyright 2015";
+NSHumanReadableCopyright = "© 2015 Dylan Waits";
