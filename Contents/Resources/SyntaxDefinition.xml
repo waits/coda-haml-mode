@@ -26,7 +26,7 @@
         				<import/>
       			</state>
 
-      			<state id="Tag Attributes" foldable="no" scope="markup.tag.attribute.name">
+      			<state id="Tag Attributes" usesymbolsfrommode="Ruby" useautocompletefrommode="Ruby" foldable="no" scope="meta.default">
       			   <begin>
       			       <regex>{</regex>
       			   </begin>
@@ -35,37 +35,16 @@
       			       <regex>}</regex>
       			   </end>
 
-               <state id="String" type="string" scope="markup.tag.attribute.value.string">
-                   <begin>
-                     <regex>"</regex>
-                   </begin>
-
-                   <end>
-                     <regex>"</regex>
-                   </end>
-               </state>
-
-               <state id="SingleString" type="string" scope="markup.tag.attribute.value.string">
-                   <begin>
-                     <regex>'</regex>
-                   </begin>
-
-                   <end>
-                     <regex>'</regex>
-                   </end>
-               </state>
+               <import mode="Ruby" />
       			</state>
 
       			<state id="Tag Class or ID" foldable="no" scope="markup.tag.attribute.name">
-        				<begin>
-          					<regex>\b[#\.]</regex>
-        				</begin>
-
-        				<end>
-                    <regex>[-_\d\w]+</regex>
-        				</end>
-
-        				<import/>
+        				<begin><regex>\b[#\.]</regex></begin>
+        				<end><regex>[-_\d\w]+</regex></end>
+      			</state>
+            <state id="Tag Class or ID" foldable="no" scope="markup.tag.attribute.name">
+        				<begin><regex>\n\s*[#\.]</regex></begin>
+        				<end><regex>[-_\d\w]+</regex></end>
       			</state>
 
             <state id="Inline JavaScript" delimiterState="Filters" usesymbolsfrommode="JavaScript" useautocompletefrommode="JavaScript" foldable="no" indent="yes" scope="meta.block.js">
