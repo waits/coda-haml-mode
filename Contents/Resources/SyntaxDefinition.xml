@@ -14,6 +14,12 @@
 
     <states>
         <default id="Base" scope="meta.default">
+          <state id="Haml Comment" type="comment" scope="comment.line.double-slash">
+            <begin><regex>-#</regex></begin>
+            <end><regex>\n</regex></end>
+            <import mode="Base" state="EmailAndURLContainerState" keywords-only="yes"/>
+          </state>
+
       			<state id="Single Tag" foldable="no" scope="markup.tag">
         				<begin>
           					<regex>\s*%</regex>
@@ -28,11 +34,11 @@
 
       			<state id="Tag Attributes" usesymbolsfrommode="Ruby" useautocompletefrommode="Ruby" foldable="no" scope="meta.default">
       			   <begin>
-      			       <regex>{</regex>
+      			       <regex>[{(]</regex>
       			   </begin>
 
       			   <end>
-      			       <regex>}</regex>
+      			       <regex>[})]</regex>
       			   </end>
 
                <import mode="Ruby" />
@@ -60,7 +66,7 @@
             </state>
 
       			<state id="Ruby" usesymbolsfrommode="Ruby" useautocompletefrommode="Ruby" foldable="no" scope="meta.default">
-                <begin><regex>[-=]</regex></begin>
+                <begin><regex>[-=]\s</regex></begin>
   				      <end><regex>\n</regex></end>
 
   				      <keywords id="ERB Delimiter" useforautocomplete="no" scope="markup.processing.languageswitch">
