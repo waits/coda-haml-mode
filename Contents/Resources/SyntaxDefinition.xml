@@ -58,7 +58,7 @@
 
       			<state id="Tag Class or ID" foldable="no" scope="markup.tag.attribute.name">
         				<begin>
-          					<regex>[#\.]</regex>
+          					<regex>\b[#\.]</regex>
         				</begin>
 
         				<end>
