@@ -54,15 +54,15 @@
       			</state>
 
             <state id="Inline JavaScript" delimiterState="Filters" usesymbolsfrommode="JavaScript" useautocompletefrommode="JavaScript" foldable="no" indent="yes" scope="meta.block.js">
-                <begin>
-                    <regex>^\s+:javascript</regex>
-                </begin>
-
-                <end>
-                    <regex>\n[^\s]{2}</regex>
-                </end>
-
+                <begin><regex>:javascript</regex></begin>
+                <end><regex>\n(?!\s+)</regex></end>
                 <import mode="JavaScript"/>
+            </state>
+
+            <state id="Inline CSS" delimiterState="Filters" usesymbolsfrommode="CSS" useautocompletefrommode="CSS" foldable="no" indent="yes" scope="meta.block.css">
+                <begin><regex>:css</regex></begin>
+                <end><regex>\n(?!\s+)</regex></end>
+                <import mode="CSS"/>
             </state>
 
       			<state id="Ruby" usesymbolsfrommode="Ruby" useautocompletefrommode="Ruby" foldable="no" scope="meta.default">
