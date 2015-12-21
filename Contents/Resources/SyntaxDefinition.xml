@@ -49,7 +49,7 @@
         				<end><regex>[-_\d\w]+</regex></end>
       			</state>
             <state id="Tag Class or ID" foldable="no" scope="markup.tag.attribute.name">
-        				<begin><regex>\n\s*[#\.]</regex></begin>
+        				<begin><regex>^\s*[#\.]</regex></begin>
         				<end><regex>[-_\d\w]+</regex></end>
       			</state>
 
