@@ -2,5 +2,5 @@
 
 CFBundleName = "Haml";
 CFBundleShortVersionString = "";
-CFBundleGetInfoString = "Haml Mode 0.1, Copyright 2015";
+CFBundleGetInfoString = "Haml Mode 0.2, Copyright 2015";
 NSHumanReadableCopyright = "© 2015 Dylan Waits";

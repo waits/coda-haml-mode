@@ -19,13 +19,13 @@
             <end><regex>\n</regex></end>
             <import mode="Base" state="EmailAndURLContainerState" keywords-only="yes"/>
           </state>
-          <state id="HTML Comment" type="comment" scope="comment.line.double-slash">
-            <begin><regex>^/</regex></begin>
+          <state id="Nested HTML Comment" type="comment" scope="comment.line.double-slash">
+            <begin><regex>^\s*/(?:\[[a-zA-Z0-9\s]*\])?\n</regex></begin>
             <end><regex>\n(?!\s+)</regex></end>
             <import mode="Base" state="EmailAndURLContainerState" keywords-only="yes"/>
           </state>
-          <state id="Nested HTML Comment" type="comment" scope="comment.line.double-slash">
-            <begin><regex>^\s+/</regex></begin>
+          <state id="Inline HTML Comment" type="comment" scope="comment.line.double-slash">
+            <begin><regex>^\s*/</regex></begin>
             <end><regex>\n</regex></end>
             <import mode="Base" state="EmailAndURLContainerState" keywords-only="yes"/>
           </state>

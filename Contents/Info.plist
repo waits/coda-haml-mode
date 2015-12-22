@@ -7,11 +7,11 @@
 	<key>CFBundleName</key>
 	<string>Haml</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.1</string>
+	<string>0.2</string>
 	<key>CFBundleVersion</key>
-	<string>0.1</string>
+	<string>0.2</string>
 	<key>CFBundleGetInfoString</key>
-	<string>0.1 Dylan Waits</string>
+	<string>0.2 Dylan Waits</string>
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleInfoDictionaryVersion</key>
